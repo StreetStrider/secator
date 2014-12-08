@@ -1,9 +1,10 @@
 {
 	"main": "secator",
+	"bin": "bin.js",
 
 	"scripts":
 	{
-		"test": "node proof.js test.js > test_release.js",
+		"test": "./bin.js test.js > test_release.js",
 		"start": "node test_release.js"
 	},
 
