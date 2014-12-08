@@ -23,6 +23,6 @@ Then run `secator file.js`. The `if` statement would be replaced with the only `
 app.feedback.log('some debug code');
 ```
 
-secator only works with `debug()` function and only in positive form (`! debug()` would not be transformed), which can be used to prevent false positive transformations.
+secator only works with `debug()` function and only in positive form (`!debug()` would not be transformed), which can be used to prevent false positive transformations.
 
-This is a fun experiment comparing two different aproaches: feature-gates vs code transforming. The second one creates lower code footpring, but requires preprocessing of all files involved. It can be used as transformation step before minification and other build steps.
+This is a fun experiment comparing two different aproaches: feature-gates vs code transforming. The second one creates lower code footprint, but requires preprocessing of all files involved. It can be used as transformation step before minification and other build steps.
