@@ -1,0 +1,11 @@
+{
+	"scripts":
+	{
+		"test": "node proof.js test.js"
+	},
+
+	"dependencies":
+	{
+		"recast": "latest"
+	}
+}
