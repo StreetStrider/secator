@@ -1,4 +1,8 @@
 {
+	"name": "secator",
+	"version": "0.1.0",
+	"description": "secator for JavaScript debug branches of code",
+
 	"main": "secator",
 	"bin": "bin.js",
 
