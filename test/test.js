@@ -16,6 +16,11 @@ else
 }
 
 if (debug())
+{
+	console.log('nothing');
+}
+
+if (debug())
 	console.log('debug branch 2');
 else
 	console.log('release branch 2');

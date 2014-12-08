@@ -18,17 +18,24 @@ module.exports = function secator (code)
 		{
 			if (isDebug(path.value))
 			{
-				var alternate = path.get('alternate').node;
-
-				path.replace(alternate);
-
-				if (N.BlockStatement.check(path.value))
+				if (path.value.alternate)
 				{
-					var body = path.get('body').node;
+					var alternate = path.get('alternate').node;
 
-					body = body.body[0]
+					path.replace(alternate);
 
-					path.replace(body);
+					if (N.BlockStatement.check(path.value))
+					{
+						var body = path.get('body').node;
+
+						body = body.body[0]
+
+						path.replace(body);
+					}
+				}
+				else
+				{
+					path.replace(B.emptyStatement().node);
 				}
 			}
 
