@@ -5,7 +5,7 @@
 	"scripts":
 	{
 		"test": "./bin.js test/test.js > test/test_release.js",
-		"start": "node test/test_release.js"
+		"start": "echo '> debug:'; node test/test.js; echo '> release:'; node test/test_release.js"
 	},
 
 	"dependencies":
