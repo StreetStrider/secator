@@ -1,4 +1,6 @@
 {
+	"main": "secator",
+
 	"scripts":
 	{
 		"test": "node proof.js test.js > test_release.js",
