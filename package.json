@@ -4,8 +4,8 @@
 
 	"scripts":
 	{
-		"test": "./bin.js test.js > test_release.js",
-		"start": "node test_release.js"
+		"test": "./bin.js test/test.js > test/test_release.js",
+		"start": "node test/test_release.js"
 	},
 
 	"dependencies":
