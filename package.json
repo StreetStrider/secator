@@ -1,7 +1,8 @@
 {
 	"scripts":
 	{
-		"test": "node proof.js test.js"
+		"test": "node proof.js test.js > test_release.js",
+		"start": "node test_release.js"
 	},
 
 	"dependencies":
